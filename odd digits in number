@@ -1,12 +1,12 @@
 #include<stdio.h>
-int odddigitex05(int n ){
+int odddigits(int n ){
 	if (n<10){
 		if(n%2==1)return 1;
 		else return 0;
 	}
 	else {
-		if ((n%10)%2==1)return 1+odddigitex05(n/10);
-		else return 0+odddigitex05(n/10);
+		if ((n%10)%2==1)return 1+odddigits(n/10);
+		else return 0+odddigits(n/10);
 	}
 }
 main () 
@@ -16,5 +16,5 @@ main ()
 	printf ("enter number");
 	scanf ("%d",&number);
 	}while(number<=0);
-	printf ("the even digit in this number is :%d",odddigitex05(number));
+	printf ("the odd digits in this number is :%d",odddigits(number));
 }
