@@ -1,12 +1,12 @@
 #include<stdio.h>
-int evendigitex04(int n ){
+int evendigits(int n ){
 	if (n<10){
 		if(n%2==0)return 1;
 		else return 0;
 	}
 	else {
-		if ((n%10)%2==0)return 1+evendigitex04(n/10);
-		else return 0+evendigitex04(n/10);
+		if ((n%10)%2==0)return 1+evendigits(n/10);
+		else return 0+evendigits(n/10);
 	}
 }
 main () 
@@ -16,5 +16,5 @@ main ()
 	printf ("enter number");
 	scanf ("%d",&number);
 	}while(number<=0);
-	printf ("the even digit in this number is :%d",evendigitex04(number));
+	printf ("the even digits in this number is :%d",evendigits(number));
 }
