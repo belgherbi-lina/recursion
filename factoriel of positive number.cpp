@@ -10,5 +10,5 @@ main ()
 	printf ("enter number");
 	scanf ("%d",&number);
 	}while(number<0);
-	printf ("the fact of this number is :%d",factex01(number));
+	printf ("the factoriel of this number is :%d",factex01(number));
 }
